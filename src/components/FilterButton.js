@@ -5,6 +5,7 @@ function FilterButton(props) {
       className="btn toggle-btn"
       aria-pressed={props.isPressed}
       onClick={() => props.setFilter(props.name)}
+      data-testid="filter-button"
     >
       <span className="visually-hidden">Show </span>
       <span>{props.name}</span>
